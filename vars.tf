@@ -3,9 +3,9 @@ variable REGION {
 }
 variable AMIS {
   type = map
-  default {
-    us-west-2 = ""
-    us-west-1 = ""
+  default = {
+    us-west-2 = "ami-0ddf424f81ddb0720"
+    us-west-1 = "ami-0ddf424f81ddb0721"
   }
 }
 variable PRIV_KEY_PATH {
@@ -18,7 +18,7 @@ variable USERNAME {
   default = "ubuntu"
 }
 variable MYIP {
-  default = "117.98.57.48/32"
+  default = "117.98.31.7/32"
 }
 variable rmquser {
   default = "rabbit"
