@@ -1,83 +1,83 @@
-variable REGION {
+variable "REGION" {
   default = "us-west-2"
 }
-variable AMIS {
-  type = map
+variable "AMIS" {
+  type = map(any)
   default = {
     us-west-2 = "ami-0ddf424f81ddb0720"
     us-west-1 = "ami-0ddf424f81ddb0721"
   }
 }
-variable PRIV_KEY_PATH {
+variable "PRIV_KEY_PATH" {
   default = "vprofile-key"
 }
-variable PUB_KEY_PATH {
+variable "PUB_KEY_PATH" {
   default = "vprofile-key.pub"
 }
-variable USERNAME {
+variable "USERNAME" {
   default = "ubuntu"
 }
-variable MYIP {
+variable "MYIP" {
   default = "117.98.31.7/32"
 }
-variable rmquser {
+variable "rmquser" {
   default = "rabbit"
 }
-variable rmqpass {
+variable "rmqpass" {
   default = "rmqpass123@"
 }
-variable dbuser {
+variable "dbuser" {
   default = "admin"
 }
-variable dbpass {
+variable "dbpass" {
   default = "admin123@"
 }
-variable dbname {
+variable "dbname" {
   default = "accounts"
 }
-variable instance_count {
+variable "instance_count" {
   default = "1"
 }
-variable VPC_NAME {
+variable "VPC_NAME" {
   default = "vprofile-vpc"
 }
-variable ZONE1 {
+variable "ZONE1" {
   default = "us-west-2a"
 }
-variable ZONE2 {
+variable "ZONE2" {
   default = "us-west-2b"
 }
-variable ZONE3 {
+variable "ZONE3" {
   default = "us-west-2c"
 }
-variable ZONE4 {
+variable "ZONE4" {
   default = "us-west-2d"
 }
-variable vpccidr {
+variable "vpccidr" {
   default = "172.21.0.0/16"
 }
-variable PubSub1cidr {
+variable "PubSub1cidr" {
   default = "172.21.1.0/24"
 }
-variable PubSub2cidr {
+variable "PubSub2cidr" {
   default = "172.21.2.0/24"
 }
-variable PubSub3cidr {
+variable "PubSub3cidr" {
   default = "172.21.3.0/24"
 }
-variable PubSub4cidr {
+variable "PubSub4cidr" {
   default = "172.21.4.0/24"
 }
-variable PrivSub1cidr {
+variable "PrivSub1cidr" {
   default = "172.21.5.0/24"
 }
-variable PrivSub2cidr {
+variable "PrivSub2cidr" {
   default = "172.21.6.0/24"
 }
-variable PrivSub3cidr {
+variable "PrivSub3cidr" {
   default = "172.21.7.0/24"
 }
-variable PrivSub4cidr {
+variable "PrivSub4cidr" {
   default = "172.21.8.0/24"
 }
 
